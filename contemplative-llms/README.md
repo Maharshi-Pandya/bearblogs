@@ -126,7 +126,7 @@ These are the main parts of the prompt that work well with models like Claude so
 
 ## Why this might (not) work?
 
-LLMs are based on the [transformers architecture](https://arxiv.org/abs/1706.03762) which is **autoregressive** by nature i.e. based on all the previous tokens it generates the next token and this happens sequentially. The reason this 'contemplation' phase should work and result in correct answer (and reasoning) is that while generating the next token in the final answer, the model will have context of all the 'contemplation' tokens. This context could be very useful in formulating the final answer section.
+LLMs are based on the [transformers architecture](https://arxiv.org/abs/1706.03762) which is **autoregressive** by nature i.e. based on all the previous tokens it generates the next token and this happens sequentially. The reason this 'contemplation' phase should work and result in correct answer (and reasoning) is that while generating the next token in the final answer, the model will have context of all the 'contemplation' tokens. This context could be very useful in formulating the final answer section. The intuition behind the sentences like "Wait...that doesn't seem right..." is that the tokens that come after this sentence might steer the model to a possibly correct path.
 
 ![autoregressive](https://raw.githubusercontent.com/Maharshi-Pandya/bearblogs/refs/heads/master/contemplative-llms/media/autoregressive.png)
 
