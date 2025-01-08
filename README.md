@@ -1,2 +1,3 @@
 # bearblogs
-My blogs for bearblog dot com goes here
+
+My blogs for bearblog dot com goes here.
