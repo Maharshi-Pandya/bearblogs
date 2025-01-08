@@ -4,7 +4,7 @@ Recently, [I posted a prompt on X (formerly, Twitter)](https://x.com/mrsiipa/sta
 
 Example output:
 
-![contemplative-llms-demo](./media/demo.png)
+![contemplative-llms-demo](https://raw.githubusercontent.com/Maharshi-Pandya/bearblogs/refs/heads/master/contemplative-llms/media/demo.png)
 
 You can find the full system prompt in this GitHub gist: [Contemplative LLMs full prompt](https://gist.github.com/Maharshi-Pandya/4aeccbe1dbaa7f89c182bd65d2764203)
 
@@ -128,7 +128,7 @@ These are the main parts of the prompt that work well with models like Claude so
 
 LLMs are based on the [transformers architecture](https://arxiv.org/abs/1706.03762) which is **autoregressive** by nature i.e. based on all the previous tokens it generates the next token and this happens sequentially. The reason this 'contemplation' phase should work and result in correct answer (and reasoning) is that while generating the next token in the final answer, the model will have context of all the 'contemplation' tokens. This context could be very useful in formulating the final answer section.
 
-![autoregressive](./media/autoregressive.png)
+![autoregressive](https://raw.githubusercontent.com/Maharshi-Pandya/bearblogs/refs/heads/master/contemplative-llms/media/autoregressive.png)
 
 The reason it might NOT work is that we are just mimicing the thinking process. LLMs are always prone to **hallucinations** (atleast as of now). If the model blatantly hallucinates during the 'contemplation' phase, then it will affect the final answer section too.
 
